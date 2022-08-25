@@ -36,7 +36,15 @@
 				const element = document.querySelector(elementSelector);
 
 				const constraints = {
-					video: { facingMode: facingMode },
+					video: { 
+						facingMode: facingMode,
+						width: 3840,
+						height: 2160,
+						frameRate: {
+							ideal: 10,
+							max: 15
+						}
+					},
 				};
 
 				element.onclick = function () {
